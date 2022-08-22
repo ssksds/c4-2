@@ -1,24 +1,24 @@
 import { Container, Flex, Heading, Spacer } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { ReachLink } from "@reach/router";
+
 export default function Home() {
   return (
     <Container>
       <Flex>
         <Heading>
-          <Link as={ReachLink} to="/">
+          <Link to="/">
             Home
           </Link>
         </Heading>
         <Spacer />
         <Heading>
-          <Link as={ReachLink} to="/dashboard">
+          <Link to="/dashboard">
             Dashboard
           </Link>
         </Heading>
         <Spacer />
         <Heading>
-          <Link as={ReachLink} to="/login">
+          <Link to="/login">
             Login_page
           </Link>
         </Heading>
